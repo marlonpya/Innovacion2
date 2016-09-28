@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/row_fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="fecha" />
+
+    <TextView
+        android:id="@+id/row_tipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="tipo" />
+
+    <TextView
+        android:id="@+id/row_precio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="precio" />
+
+</LinearLayout>
