@@ -5,8 +5,8 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:gravity="center"
-    android:background="@color/colorAccent"
     tools:text="Test"
+    android:textColor="@android:color/white"
     android:textSize="14sp"
     android:padding="8dp">
 

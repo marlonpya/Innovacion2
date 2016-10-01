@@ -27,14 +27,14 @@ public class ListaUsuarioFragment extends Fragment {
     private AdapterListaUsuario adapter;
     private Realm realm;
 
-    public ListaUsuarioFragment() {
-    }
+    public ListaUsuarioFragment() { }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_lista_usuario, container, false);
         ButterKnife.bind(this, view);
+
         if (Pedido.getUltimoId() == 0) { cargarEjemplos(); }
         configuracionListaRealm();
         return view;

@@ -27,13 +27,11 @@ public class BaseActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
     }
 
-    public static void setToolbarSon(Toolbar toolbar, AppCompatActivity activity, ImageView imageView){
+    public static void setToolbarSon(Toolbar toolbar, AppCompatActivity activity, String titulo){
         activity.setSupportActionBar(toolbar);
         activity.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         activity.getSupportActionBar().setDisplayShowHomeEnabled(false);
-        activity.getSupportActionBar().setTitle("");
-        //toolbar.setNavigationIcon(R.drawable.ic_arrow_blue);
-        //toolbar.setOverflowIcon(activity.getResources().getDrawable(R.drawable.ic_navigation_more_vert));
+        activity.getSupportActionBar().setTitle(titulo);
     }
 
 }

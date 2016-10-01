@@ -21,10 +21,10 @@ public class TabAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int posicion) {
-        switch (cantidad){
+        switch (posicion){
             case 0 : return new MenuUsuarioFragment();
             case 1 : return new ListaUsuarioFragment();
-            default: return null;
+            default: return new MenuUsuarioFragment();
         }
     }
 

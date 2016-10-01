@@ -1,6 +1,7 @@
 package application.ucweb.innovacion.modelo;
 
 import io.realm.Realm;
+import io.realm.RealmList;
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;
 
@@ -15,6 +16,7 @@ public class Pedido extends RealmObject {
     private String fecha;
     private String tipo;
     private Double precio;
+    private RealmList<ItemPedido> lista;
 
     public static int getUltimoId() {
         Realm realm = Realm.getDefaultInstance();
@@ -52,5 +54,13 @@ public class Pedido extends RealmObject {
 
     public void setPrecio(Double precio) {
         this.precio = precio;
+    }
+
+    public RealmList<ItemPedido> getLista() {
+        return lista;
+    }
+
+    public void setLista(RealmList<ItemPedido> lista) {
+        this.lista = lista;
     }
 }
